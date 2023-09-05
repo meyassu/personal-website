@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/**/*.html',
@@ -6,14 +7,12 @@ module.exports = {
     './src/**/*.js', // Also scan .js files
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'urbanist': ['Urbanist', 'sans-serif'],
+        'cedarville-cursive': ['"Cedarville Cursive"', 'cursive']
+      }
+    },
   },
   plugins: [],
-  extend: {
-    fontFamily: {
-      'urbanist': ['Urbanist', 'sans-serif'],
-      'cedarville-cursive': ['"Cedarville Cursive"', 'cursive']
-    }
-  }
-}
-
+};

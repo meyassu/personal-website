@@ -1,14 +1,36 @@
+/* Tailwind Base and Components */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Font face definitions */
 @font-face {
     font-family: 'Urbanist';
     src: url('./res/fonts/Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Cedarville Cursive';
-    src: url('./res/fonts/Cedarville_Cursive/CedarvilleCursive-Regular.ttf') format('truetype');
-    /* Add other font properties like `font-weight` as needed */
+    font-family: 'Nanum Gothic Coding';
+    src: url('./res/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Regular.ttf') format('truetype');
+}
+
+/* Utility classes for your custom fonts */
+.font-urbanist-thin {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 100;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
+  
+  @keyframes fadeInOpacity {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
