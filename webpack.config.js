@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const path = require('path');
 
 module.exports = {
@@ -27,6 +26,19 @@ module.exports = {
             presets: ['@babel/preset-react']
           }
         }
+      },
+      {
+        // Add this rule to handle font files
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/', // where the fonts will go
+            },
+          },
+        ],
       }
     ]
   },

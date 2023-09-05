@@ -1,3 +1,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./res/fonts/Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cedarville Cursive';
+    src: url('./res/fonts/Cedarville_Cursive/CedarvilleCursive-Regular.ttf') format('truetype');
+    /* Add other font properties like `font-weight` as needed */
+  }
