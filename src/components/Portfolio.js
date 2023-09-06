@@ -2,7 +2,9 @@ import React from 'react';
 
 const Portfolio = () => {
   return (
-    <p className="text-4xl font-bold">Portfolio</p>
+    <div className="bg-black text-white min-h-screen flex flex-col justify-center">
+      {/* Your Portfolio content here */}
+    </div>
   );
 };
 

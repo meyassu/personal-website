@@ -33,4 +33,17 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+  
+  
+  /* Underline */
+.custom-arrow {
+    position: absolute;
+    width: 29.97px;
+    height: 0px;
+    left: 181px;
+    top: 215px;
+    
+    border: 1px solid #FF910F;
+    transform: rotate(25.71deg);
+}
 
