@@ -10,7 +10,9 @@ const Menu = () => {
 
 
   const handleResize = () => {
-    setMenuOpen(false); // close the hamburger menu when window resizes
+    if (window.innerWidth > 1024) {
+        setMenuOpen(false); // close the hamburger menu when window resizes
+    }
   };
 
   useEffect(() => {
@@ -35,24 +37,28 @@ const Menu = () => {
         <ResumeLink />
       </div>
 
-      {/* Hamburger menu for small screens */}
-      <div className="md:flex lg:hidden">
-        <div onClick={toggleMenu}>
-          <div className="h-1 w-6 bg-orange-500 mb-1"></div>
-          <div className="h-1 w-6 bg-orange-500 mb-1"></div>
-          <div className="h-1 w-6 bg-orange-500"></div>
+      <div className="absolute top-4 right-4">
+        {/* Hamburger icon */}
+        <div className="md:flex lg:hidden w-6 h-8" onClick={toggleMenu}>
+          <div>
+            <div className="h-1 w-6 bg-orange-500 mb-1"></div>
+            <div className="h-1 w-6 bg-orange-500 mb-1"></div>
+            <div className="h-1 w-6 bg-orange-500"></div>
+          </div>
         </div>
 
+        {/* Hamburger dropdown menu */}
         {isMenuOpen && (
-          <div className="absolute top-0 right-0 mt-12 bg-light-orange p-5 rounded shadow-lg">
-            <MenuItem number="01." label="About" />
-            <MenuItem number="02." label="Experience" />
-            <MenuItem number="03." label="Work" />
-            <MenuItem number="04." label="Contact" />
-            <ResumeLink />
-          </div>
+        <div className="absolute top-0 right-0 mt-12 bg-black p-5 rounded shadow-lg md:flex lg:hidden flex-col z-20">
+          <MenuItem number="01." label="About" />
+          <MenuItem number="02." label="Experience" />
+          <MenuItem number="03." label="Work" />
+          <MenuItem number="04." label="Contact" />
+          <ResumeLink />
+        </div>
         )}
       </div>
+   
     </div>
   );
 };
