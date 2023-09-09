@@ -1,19 +1,46 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
-import Portfolio from './components/Portfolio';
+import About from './components/About'
+import Work from './components/Work';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Menu from './components/Menu'
 
 function App() {
+
   return (
     <Router>
+        <Menu/>
+      
+      <div>
+        <Routes>
+            <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+
+      <div>
+        <Routes>
+            <Route path="/work" element={<Work />} />
+        </Routes>
+      </div>
+
+      <div>
+        <Routes>
+            <Route path="/experience" element={<Experience />} />
+        </Routes>
+      </div>
+
+      <div>
+        <Routes>
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+     
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
+
     </Router>
   );
 }

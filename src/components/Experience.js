@@ -2,7 +2,9 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <p className="text-4xl font-bold">Contact</p>
+    <div id = "experience">
+        <p className="text-4xl font-bold">Experience</p>
+    </div>
   );
 };
 

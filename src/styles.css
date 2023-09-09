@@ -9,15 +9,14 @@
     src: url('./res/fonts/Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Nanum Gothic Coding';
-    src: url('./res/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Regular.ttf') format('truetype');
-}
-
 /* Utility classes for your custom fonts */
 .font-urbanist-thin {
     font-family: 'Urbanist', sans-serif;
     font-weight: 100;
+}
+
+.my-font {
+    font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
 }
 
 /* Fade-in animation */
@@ -33,17 +32,27 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+/* Add media queries for large screens (768px and above) */
+@media (min-width: 768px) {
+    .lg\:hidden {
+      display: none;
+    }
+  
+    .lg\:static {
+      position: static;
+    }
+  
+    .lg\:flex-row {
+      flex-direction: row;
+    }
+  }
+
+
+  bg-light-orange {
+    background-color: #FFDAB9; /* This is a light-orange color, adjust as needed */
+  }
   
   
-  /* Underline */
-.custom-arrow {
-    position: absolute;
-    width: 29.97px;
-    height: 0px;
-    left: 181px;
-    top: 215px;
-    
-    border: 1px solid #FF910F;
-    transform: rotate(25.71deg);
-}
+  
 
