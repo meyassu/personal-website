@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Menu = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isHamburgerOpen, setHamburgerOpen] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+
+  const handleResize = () => {
+    setMenuOpen(false); // close the hamburger menu when window resizes
+  };
+
+  useEffect(() => {
+    // Attach the event listener when component mounts
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);  // The empty dependency array ensures this effect runs once when the component mounts, and cleanup runs when it unmounts.
 
 
   return (
