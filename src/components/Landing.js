@@ -25,24 +25,90 @@ const Landing = () => {
       <div className="bg-black text-white min-h-screen flex flex-col justify-center relative">
         <Menu />
 
+      {/* Social Links */}
+      <div className="fixed bottom-0 right-0 pb-8 pr-8">
+        <div className="flex flex-col items-end">
+          <div className="flex space-x-2 mb-4">
+            
+            {/* Github */}
+            <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer" className="group">
+              <img 
+                src="res/images/github-logo-light-gray.png" 
+                alt="GitHub" 
+                className="w-6 h-6 group-hover:hidden" 
+              />
+              <img 
+                src="res/images/github-logo-orange.png" 
+                alt="GitHub hover" 
+                className="w-6 h-6 hidden group-hover:block" 
+              />
+            </a>
+
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/in/matthias-eyassu/" target="_blank" rel="noopener noreferrer" className="group">
+              <img 
+                src="res/images/linkedin-logo-light-gray.jpeg" 
+                alt="LinkedIn" 
+                className="w-6 h-6 group-hover:hidden" 
+              />
+              <img 
+                src="res/images/linkedin-logo-orange.png" 
+                alt="LinkedIn hover" 
+                className="w-6 h-6 hidden group-hover:block" 
+              />
+            </a>
+          </div>
+          <div className="h-1/2 w-1 bg-orange-500"></div>
+        </div>
+      </div>
+
+
+
+
+
+  
+
+
+
+
+
       {/* Title */}
       <div className={`text-left pl-16 pt-10 ${showIntro ? 'fade-in' : 'opacity-0'}`}>
-        <p className="text-2xl mb-3">Hi, I'm</p>
+        <p className="text-xl sm:text-2xl mb-3">Hi, I'm</p>
       </div>
         <div className={`text-left pl-16 pt-0 ${showName ? 'fade-in' : 'opacity-0'}`}>
-          <p className="text-7xl font-extrabold inline">Matthias</p>
+          <p className="text-5xl sm:text-6xl md:text-7xl font-extrabold inline">Matthias</p>
           <span className="text-8xl text-orange-500" style={{ fontSize: '75px', fontWeight: '900' }}>.</span>
         </div>
         {/* Description */}
         <div className={`pl-16 text-left px-16 mt-8 ${showDescription ? 'fade-in' : 'opacity-0'}`}>
-         <p className="text-gray-500 font-light w-3/5 leading-relaxed" style={{ fontSize: '25px', lineHeight: '1.4' }}>
+        <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-gray-500 font-light w-3/5 leading-relaxed">
             A software engineer with experience in full-stack development and machine learning and a passion for writing
             efficient and powerful code.
           </p>
+
         </div>
       </div>
     </div>
   );
 };
+
+
+
+
+    //    {/* Social Links */}
+    //    <div className="fixed bottom-0 right-0 pb-8 pr-8">
+    //    <div className="flex flex-col items-end">
+    //      <div className="flex space-x-2 mb-4">
+    //        <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer">
+    //          <img src="res/images/github-logo-light-gray.png" alt="GitHub" className="w-6 h-6"/>
+    //        </a>
+    //        <a href="https://linkedin.com/in/matthias-eyassu" target="_blank" rel="noopener noreferrer">
+    //          <img src="res/images/linkedin-logo-light-gray.jpeg" alt="LinkedIn" className="w-6 h-6"/>
+    //        </a>
+    //      </div>
+    //      <div className="h-1/2 w-1 bg-orange-500"></div>
+    //    </div>
+    //  </div>
 
 export default Landing;

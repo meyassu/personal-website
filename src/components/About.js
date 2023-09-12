@@ -42,12 +42,13 @@ const About = () => {
 
 
   
-const Header = ({ number, text}) => (
+const Header = ({ number, text }) => (
     <div className="mb-12 mt-4">
-      <span className="text-orange-500 text-2xl">{number}</span>
-      <a className="text-gray-200 text-3xl ml-2">{text}</a>
+      <span className="text-xl sm:text-2xl text-orange-500">{number}</span>
+      <a className="text-2xl sm:text-3xl text-gray-200 ml-2">{text}</a>
     </div>
   );
+  
 
 const Hyperlink = ({text, link}) => (
      <a
