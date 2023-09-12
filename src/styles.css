@@ -47,11 +47,23 @@
       flex-direction: row;
     }
   }
+  
+.bullet-point {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.bullet-point::before {
+    content: '→';
+    color: #F97316; /* Tailwind's orange-500 color code */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
-  bg-light-orange {
-    background-color: #FFDAB9; /* This is a light-orange color, adjust as needed */
-  }
+  
   
   
   

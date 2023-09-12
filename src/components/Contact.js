@@ -2,7 +2,8 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <p className="text-4xl font-bold">Contact</p>
+    <div id = "contact" className="bg-black text-white min-h-screen flex flex-col justify-center">
+    </div>
   );
 };
 

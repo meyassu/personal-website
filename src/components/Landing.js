@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Menu from './Menu'
 
-const LandingPage = () => {
+const Landing = () => {
   const [showIntro, setShowIntro] = useState(false);
   const [showName, setShowName] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
@@ -20,7 +20,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div id="landing" className="flex flex-col">
       {/* Init parameters */}
       <div className="bg-black text-white min-h-screen flex flex-col justify-center relative">
         <Menu />
@@ -45,4 +45,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Landing;
