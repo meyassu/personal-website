@@ -30,7 +30,7 @@ export default Work;
 
 
 const Header = ({ number, text }) => (
-  <div className="mb-12 mt-4">
+  <div className="mb-12 mt-8">
     <span className="text-xl sm:text-2xl text-orange-500">{number}</span>
     <a className="text-2xl sm:text-3xl text-gray-200 ml-2">{text}</a>
   </div>

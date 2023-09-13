@@ -28,7 +28,7 @@ const Landing = () => {
       {/* Social Links */}
       <div className="fixed bottom-0 right-0 pb-8 pr-8">
         <div className="flex flex-col items-end">
-          <div className="flex space-x-2 mb-4">
+          <div className="flex space-x-2 mb-4"> 
             
             {/* Github */}
             <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer" className="group">
@@ -52,7 +52,7 @@ const Landing = () => {
                 className="w-6 h-6 group-hover:hidden" 
               />
               <img 
-                src="res/images/linkedin-logo-orange.png" 
+                src="res/images/linkedin-logo-orange.jpeg" 
                 alt="LinkedIn hover" 
                 className="w-6 h-6 hidden group-hover:block" 
               />
@@ -61,16 +61,6 @@ const Landing = () => {
           <div className="h-1/2 w-1 bg-orange-500"></div>
         </div>
       </div>
-
-
-
-
-
-  
-
-
-
-
 
       {/* Title */}
       <div className={`text-left pl-16 pt-10 ${showIntro ? 'fade-in' : 'opacity-0'}`}>
@@ -85,7 +75,7 @@ const Landing = () => {
         <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-gray-500 font-light w-3/5 leading-relaxed">
             A software engineer with experience in full-stack development and machine learning and a passion for writing
             efficient and powerful code.
-          </p>
+        </p>
 
         </div>
       </div>
@@ -94,21 +84,5 @@ const Landing = () => {
 };
 
 
-
-
-    //    {/* Social Links */}
-    //    <div className="fixed bottom-0 right-0 pb-8 pr-8">
-    //    <div className="flex flex-col items-end">
-    //      <div className="flex space-x-2 mb-4">
-    //        <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer">
-    //          <img src="res/images/github-logo-light-gray.png" alt="GitHub" className="w-6 h-6"/>
-    //        </a>
-    //        <a href="https://linkedin.com/in/matthias-eyassu" target="_blank" rel="noopener noreferrer">
-    //          <img src="res/images/linkedin-logo-light-gray.jpeg" alt="LinkedIn" className="w-6 h-6"/>
-    //        </a>
-    //      </div>
-    //      <div className="h-1/2 w-1 bg-orange-500"></div>
-    //    </div>
-    //  </div>
 
 export default Landing;

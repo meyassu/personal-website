@@ -5,7 +5,7 @@ const About = () => {
     <div id="about" className="bg-black text-gray-200 min-h-screen flex flex-col items-start justify-start p-8">
         <div className="w-3/5 ml-6">
             <Header number="01." text="About me"/>
-            <div className="text-left mt-8">
+            <div className="text-left mt-10">
 
                 <p className="text-gray-500 font-light w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
                 Hi! My name is Matthias Eyassu and I enjoy building software with a clear and positive societal impact. 
@@ -43,7 +43,7 @@ const About = () => {
 
   
 const Header = ({ number, text }) => (
-    <div className="mb-12 mt-4">
+    <div className="mb-12 mt-8">
       <span className="text-xl sm:text-2xl text-orange-500">{number}</span>
       <a className="text-2xl sm:text-3xl text-gray-200 ml-2">{text}</a>
     </div>
