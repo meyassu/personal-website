@@ -97,7 +97,7 @@ const Menu = () => {
                 <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-20 backdrop-blur-md z-10"/>
             )}
 
-            <div className="fixed cursor-pointer top-0 right-0 w-full bg-gray-900 bg-opacity-20 backdrop-blur-md h-16 z-20 flex justify-end items-center" onClick={handleNavigation}> 
+            <div className="fixed cursor-pointer top-0 right-0 w-full bg-gray-900 bg-opacity-20 backdrop-blur-md h-16 z-20 flex justify-end items-center xs:bg-green-500" onClick={handleNavigation}> 
                 <div className="hidden md:hidden lg:flex items-center text-sm mt-4">
                     <MenuItem number="01." label="About" href="#about" />
                     <MenuItem number="02." label="Work" href="#work" />
@@ -106,12 +106,12 @@ const Menu = () => {
                 </div>
 
                 <div className="absolute top-4 right-4 z-30">
-                <div className="md:flex lg:hidden w-6 h-8 cursor-pointer p-1 custom-hamburger" onClick={toggleHamburgerMenu}>
+                    <div className="md:flex lg:hidden w-6 h-8 cursor-pointer p-1">
                         <div>
-                            <div className="h-1 w-6 bg-orange-500 mb-1"></div>
-                            <div className="h-1 w-6 bg-orange-500 mb-1"></div>
-                            <div className="h-1 w-6 bg-orange-500"></div>
-                        </div>
+                            <div className="h-1 w-6 bg-orange-500 mb-1"/>
+                            <div className="h-1 w-6 bg-orange-500 mb-1"/>
+                            <div className="h-1 w-6 bg-orange-500"/>
+                         </div>
                     </div>
 
                     {isHamburgerMenuOpen && (
