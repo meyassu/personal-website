@@ -31,28 +31,28 @@ const Landing = () => {
           <div className="flex space-x-2 mb-4"> 
             
             {/* Github */}
-            <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer" className="group">
+            <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <img 
-                src="res/images/github-logo-light-gray.png" 
+                src="res/images/landing/social_logos/github-logo-light-gray.png" 
                 alt="GitHub" 
                 className="w-6 h-6 group-hover:hidden" 
               />
               <img 
-                src="res/images/github-logo-orange.png" 
+                src="res/images/landing/social_logos/github-logo-orange.png" 
                 alt="GitHub hover" 
                 className="w-6 h-6 hidden group-hover:block" 
               />
             </a>
 
             {/* LinkedIn */}
-            <a href="https://www.linkedin.com/in/matthias-eyassu/" target="_blank" rel="noopener noreferrer" className="group">
+            <a href="https://www.linkedin.com/in/matthias-eyassu/" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <img 
-                src="res/images/linkedin-logo-light-gray.jpeg" 
+                src="res/images/landing/social_logos/linkedin-logo-light-gray.jpeg" 
                 alt="LinkedIn" 
                 className="w-6 h-6 group-hover:hidden" 
               />
               <img 
-                src="res/images/linkedin-logo-orange.jpeg" 
+                src="res/images/landing/social_logos/linkedin-logo-orange.jpeg" 
                 alt="LinkedIn hover" 
                 className="w-6 h-6 hidden group-hover:block" 
               />

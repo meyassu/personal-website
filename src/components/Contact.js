@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
-  const images = ["res/images/calvin-hobbes-darts.jpeg", "res/images/calvin-hobbes-tree.jpeg", "res/images/calvin-hobbes-hunting.jpeg", "res/images/calvin-hobbes-exploring.jpeg", "res/images/calvin-hobbes-thinking.jpeg"]
+  const images = ["res/images/contact/bottom/calvin-hobbes-darts.jpeg", "res/images/contact/bottom/calvin-hobbes-tree.jpeg", "res/images/contact/bottom/calvin-hobbes-hunting.jpeg", "res/images/contact/bottom/calvin-hobbes-exploring.jpeg", "res/images/contact/bottom/calvin-hobbes-thinking.jpeg"]
     return (
     <div id="contact" className="bg-black text-gray-200 min-h-screen flex flex-col justify-between p-8">
       
@@ -12,7 +12,7 @@ const Contact = () => {
             <p className="text-gray-500 font-light w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
                 Feel free to connect with me on <Hyperlink text="LinkedIn" link="https://www.linkedin.com/in/matthias-eyassu/"/>, 
                 send me a message via email at <Hyperlink text="matthiaseyassu@gmail.com" link="mailto:matthiaseyassu@gmail.com"/>, or
-                follow me on <Hyperlink text="Github" link="https://github.com/meyassu"/>!
+                check out my profile on <Hyperlink text="Github" link="https://github.com/meyassu"/>!
             </p>
         </div>
       </div>
@@ -21,7 +21,10 @@ const Contact = () => {
       <div className="self-center">
         <img src={images[2]} alt="Calvin/Hobbes" />
       </div>
-
+    
+      <div className="self-center">
+        <p className="mt-2 text-gray-400 text-xs text-center">Designed & developed by me :)</p>
+      </div>
     </div>
   );
 };
