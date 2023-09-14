@@ -18,12 +18,12 @@ const Contact = () => {
       </div>
 
       {/* New Image div */}
-      <div className="self-center">
+      <div className="self-center -mb-22">
         <img src={images[2]} alt="Calvin/Hobbes" />
       </div>
     
       <div className="self-center">
-        <p className="mt-2 text-gray-400 text-xs text-center">Designed & developed by me :)</p>
+        <p className="text-gray-400 text-xs text-center -mb-4">Designed & developed by me :)</p>
       </div>
     </div>
   );

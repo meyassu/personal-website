@@ -74,6 +74,14 @@
     margin-left: -1em; /* Adjust as necessary */
 }
 
+@media (max-width: 500px) {
+    .custom-hamburger {
+        width: 48px;
+        height: 48px;
+        padding: 10px;
+    }
+}
+
 
   
   

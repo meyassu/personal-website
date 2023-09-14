@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Menu = () => {
     const [isHamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
@@ -71,7 +72,7 @@ const Menu = () => {
         if (!targetId) {
             targetId = "#landing"
         }
-        
+
         // If the targetId is null or the resume link, return early.
         if (targetId.includes('res/docs')) return;
 
@@ -105,7 +106,7 @@ const Menu = () => {
                 </div>
 
                 <div className="absolute top-4 right-4 z-30">
-                    <div className="md:flex lg:hidden w-6 h-8 cursor-pointer" onClick={toggleHamburgerMenu}>
+                <div className="md:flex lg:hidden w-6 h-8 cursor-pointer p-1 custom-hamburger" onClick={toggleHamburgerMenu}>
                         <div>
                             <div className="h-1 w-6 bg-orange-500 mb-1"></div>
                             <div className="h-1 w-6 bg-orange-500 mb-1"></div>
