@@ -5,10 +5,16 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
+    publicPath: '/'
   },
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource'
+      },
       {
         test: /\.css$/,
         use: [

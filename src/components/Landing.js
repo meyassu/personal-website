@@ -1,6 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Menu from './Menu'
 
+import githubGray from "../../public/res/images/landing/social_logos/github-logo-light-gray.png" 
+import githubOrange from "../../public/res/images/landing/social_logos/github-logo-orange.png"
+import linkedinGray from "../../public/res/images/landing/social_logos/linkedin-logo-light-gray.jpeg"
+import linkedinOrange from "../../public/res/images/landing/social_logos/linkedin-logo-orange.jpeg"
+
 const Landing = () => {
   const [showIntro, setShowIntro] = useState(false);
   const [showName, setShowName] = useState(false);
@@ -33,12 +38,12 @@ const Landing = () => {
             {/* Github */}
             <a href="https://github.com/meyassu" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <img 
-                src="res/images/landing/social_logos/github-logo-light-gray.png" 
+                src={githubGray} 
                 alt="GitHub" 
                 className="w-6 h-6 group-hover:hidden" 
               />
               <img 
-                src="res/images/landing/social_logos/github-logo-orange.png" 
+                src={githubOrange}
                 alt="GitHub hover" 
                 className="w-6 h-6 hidden group-hover:block" 
               />
@@ -47,12 +52,12 @@ const Landing = () => {
             {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/matthias-eyassu/" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <img 
-                src="res/images/landing/social_logos/linkedin-logo-light-gray.jpeg" 
+                src={linkedinGray}
                 alt="LinkedIn" 
                 className="w-6 h-6 group-hover:hidden" 
               />
               <img 
-                src="res/images/landing/social_logos/linkedin-logo-orange.jpeg" 
+                src={linkedinOrange}
                 alt="LinkedIn hover" 
                 className="w-6 h-6 hidden group-hover:block" 
               />

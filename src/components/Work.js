@@ -1,5 +1,10 @@
 import React from 'react';
 
+import ahabPic from "../../public/res/images/work/project_logos/ahab.png"
+import douglasPic from "../../public/res/images/work/project_logos/douglas.png"
+import githubGray from "../../public/res/images/landing/social_logos/github-logo-light-gray.png" 
+import githubOrange from "../../public/res/images/landing/social_logos/github-logo-orange.png"
+
 const Work = () => {
   return (
     <div id="work" className="bg-black text-gray-200 min-h-screen flex flex-col items-start justify-start p-8">
@@ -7,13 +12,13 @@ const Work = () => {
           <Header number="02." text="Featured Work"/>
           <div className="flex flex-wrap -ml-8 -mt-10"> {/* justify-between */}
             <ProjectIcon 
-              imageUrl="/res/images/work/project_logos/ahab.png" 
+              imageUrl={ahabPic}
               projectName="Ahab" 
               description="Deep-learning-based object recognition and segmentation system built for an aquatic Unmanned Autonomous Vehicle (UAV). The inference model is a YOLOv5 neural network trained on images of a static obstacle course in an aquatic environment, namely the Potomac River."
               githubLink="https://github.com/meyassu/uav"
             />
             <ProjectIcon 
-              imageUrl="/res/images/work/project_logos/douglas.png" 
+              imageUrl={douglasPic}
               projectName="Douglas" 
               description="Fine-tuned GPT-2 and old-fashioned text-generating RNN trained on classic science-fiction stories for the purpose of providing the community with extremely low-resource models to experiment with in a fun context."
               githubLink="https://github.com/meyassu/douglas"
@@ -55,13 +60,13 @@ const ProjectIcon = ({ imageUrl, projectName, description, githubLink }) => (
         <a href={githubLink} target="_blank" rel="noopener noreferrer" className="self-center mt-2 group">
           {/* Regular GitHub logo */}
           <img 
-            src="res/images/work/social_logos/github-logo-light-gray.png" 
+            src={githubGray}
             alt="GitHub" 
             className="w-6 h-6 group-hover:hidden" 
           />
           {/* GitHub logo on hover */}
           <img 
-            src="res/images/work/social_logos/github-logo-orange.png" 
+            src={githubOrange} 
             alt="GitHub hover" 
             className="w-6 h-6 hidden group-hover:block" 
           />

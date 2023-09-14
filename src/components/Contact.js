@@ -1,7 +1,9 @@
 import React from 'react';
 
+import calvinHobbes from "../../public/res/images/contact/bottom/calvin-hobbes-hunting.jpeg"
+
 const Contact = () => {
-  const images = ["res/images/contact/bottom/calvin-hobbes-darts.jpeg", "res/images/contact/bottom/calvin-hobbes-tree.jpeg", "res/images/contact/bottom/calvin-hobbes-hunting.jpeg", "res/images/contact/bottom/calvin-hobbes-exploring.jpeg", "res/images/contact/bottom/calvin-hobbes-thinking.jpeg"]
+    // const images = ["res/images/contact/bottom/calvin-hobbes-darts.jpeg", "res/images/contact/bottom/calvin-hobbes-tree.jpeg", "res/images/contact/bottom/calvin-hobbes-hunting.jpeg", "res/images/contact/bottom/calvin-hobbes-exploring.jpeg", "res/images/contact/bottom/calvin-hobbes-thinking.jpeg"]
     return (
     <div id="contact" className="bg-black text-gray-200 min-h-screen flex flex-col justify-between p-8">
       
@@ -19,7 +21,7 @@ const Contact = () => {
 
       {/* New Image div */}
       <div className="self-center -mb-22">
-        <img src={images[2]} alt="Calvin/Hobbes" />
+        <img src={calvinHobbes} alt="Calvin/Hobbes" />
       </div>
     
       <div className="self-center">

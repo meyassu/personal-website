@@ -1,5 +1,7 @@
 import React from 'react';
 
+import particleCollision from "../../public/res/images/about/right/particle-collision-3.png"
+
 const About = () => {
   return (
     <div id="about" className="bg-black text-gray-200 min-h-screen flex flex-col items-start justify-start p-8">
@@ -52,7 +54,7 @@ const About = () => {
             </div>
 
             <div className="w-2/5 flex flex-col items-center mt-32 mr-16">
-                <img src="res/images/about/right/particle-collision-3.png" alt="Describe the image here" className="rounded shadow-lg"/>
+                <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
                 <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
             </div>
         
@@ -80,12 +82,6 @@ const Hyperlink = ({text, link}) => (
     >
         {text}
     </a>
-);
-
-const BulletPoint = ({ children }) => (
-    <li className="bullet-point">
-      {children}
-    </li>
 );
 
 
