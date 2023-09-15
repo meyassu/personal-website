@@ -8,10 +8,10 @@ const Contact = () => {
     <div id="contact" className="bg-black text-gray-200 min-h-screen flex flex-col justify-between p-8">
       
       {/* Existing content */}
-      <div className="w-3/5 ml-8">
+      <div className="w-full md:w-3/5 md:ml-8">
           <Header number="03." text="Contact me"/>
           <div className="text-left mt-10">
-            <p className="text-gray-500 font-light w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
+            <p className="text-gray-500 font-light w-full md:w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
                 Feel free to connect with me on <Hyperlink text="LinkedIn" link="https://www.linkedin.com/in/matthias-eyassu/"/>, 
                 send me a message via email at <Hyperlink text="matthiaseyassu@gmail.com" link="mailto:matthiaseyassu@gmail.com"/>, or
                 check out my profile on <Hyperlink text="Github" link="https://github.com/meyassu"/>!

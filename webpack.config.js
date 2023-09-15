@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg|pdf)$/i,
         type: 'asset/resource'
       },
       {
@@ -48,6 +48,15 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    host: '0.0.0.0',
+    port: 8080,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    historyApiFallback: true,
+    hot: true
+  },  
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html'

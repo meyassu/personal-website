@@ -8,9 +8,9 @@ import githubOrange from "../../public/res/images/landing/social_logos/github-lo
 const Work = () => {
   return (
     <div id="work" className="bg-black text-gray-200 min-h-screen flex flex-col items-start justify-start p-8">
-      <div className="w-full ml-8">
+      <div className="w-full md:ml-8">
           <Header number="02." text="Featured Work"/>
-          <div className="flex flex-wrap -ml-8 -mt-10"> {/* justify-between */}
+          <div className="flex flex-col md:flex-row md:flex-wrap -ml-8 -mt-10"> {/* justify-between */}
             <ProjectIcon 
               imageUrl={ahabPic}
               projectName="Ahab" 
@@ -26,7 +26,7 @@ const Work = () => {
             <ProjectIcon />
           </div>
       </div>
-      <p className=" ml-8 text-base text-gray-300 overflow-ellipsis overflow-hidden">Note: many repositories on my Github are private due to ongoing NDAs</p>
+      <p className="md:ml-8 text-base text-gray-300 overflow-ellipsis overflow-hidden">Note: many repositories on my Github are private due to ongoing NDAs</p>
     </div>
   );
 };
@@ -43,7 +43,7 @@ const Header = ({ number, text }) => (
 );
 
 const ProjectIcon = ({ imageUrl, projectName, description, githubLink }) => (
-  <div className="rounded-xl border-none w-1/4 p-4 m-2 flex flex-col items-stretch">
+  <div className="rounded-xl border-none w-full md:w-1/4 p-4 m-2 flex flex-col items-stretch">
     {/* Top half for the project image */}
     <div className="bg-gray-800 rounded-t-xl overflow-hidden flex-shrink-0">
       <img src={imageUrl} alt={projectName} className="object-cover w-full" style={{height: '200px'}}/>
@@ -53,7 +53,7 @@ const ProjectIcon = ({ imageUrl, projectName, description, githubLink }) => (
     <div className="flex-grow p-2 bg-gray-900 rounded-b-xl flex flex-col justify-between">
       <div className="mb-2">
         <h3 className="text-base text-center lg:text-left sm:text-lg text-white">{projectName}</h3>
-        <p className="text-xs sm:text-sm text-gray-300 overflow-ellipsis overflow-hidden hidden lg:block">{description}</p>
+        <p className="text-xs sm:text-sm text-gray-300 overflow-ellipsis overflow-hidden">{description}</p>
       </div>
 
       {githubLink && 

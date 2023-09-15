@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import particleCollision from "../../public/res/images/about/right/particle-collision-3.png"
 
 const About = () => {
+    const [isSmallViewport, setIsSmallViewport] = useState(window.innerWidth < 768);
+
+    // Handle window resizing.
+    const handleResize = () => {
+        if (window.innerWidth < 768) {
+            setIsSmallViewport(true);
+        }
+        else {
+            setIsSmallViewport(false)
+        }
+    };
+
+    useEffect(() => {
+        // Attach event listeners when the component mounts.
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listeners when the component unmounts.
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [isSmallViewport]);
+
+
   return (
     <div id="about" className="bg-black text-gray-200 min-h-screen flex flex-col items-start justify-start p-8">
-        <div className="flex w-full ml-6 justify-between">
-            <div className="w-3/5">
+        <div className="flex w-full md:ml-6 justify-between">
+            <div className="w-full md:w-3/5">
                 <Header number="01." text="About me"/>
+                {/* About me */}
                 <div className="text-left mt-10">
-                    <p className="text-gray-500 font-light w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
+                    <p className="text-gray-500 font-light w-full md:w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
                     Hi! My name is Matthias Eyassu and I enjoy building software with a clear and positive societal impact. 
                     I recently graduated from <Hyperlink text="George Mason University" link="https://www.gmu.edu/"/> with a 
                     degree in computer science where I worked as a research assistant in the <Hyperlink text="Biomedical Imaging Laboratory" 
@@ -21,7 +45,7 @@ const About = () => {
 
                     <br/>
 
-                    <p className="text-gray-500 font-light w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
+                    <p className="text-gray-500 font-light w-full md:w-4/5 md:text-lg" style={{ lineHeight: '1.4' }}>
                     In my free time, I play soccer for <Hyperlink text="Marauders FC" link="https://www.vamfc.org/"/> in the <Hyperlink text="EPSL" link="https://epslsoccer.com/"/>, 
                     a sprawling east-coast amateur league, read old science-fiction, and hang out with my friends. 
                     I also like making toy programs on a small scale; I’m currently making a tiny neural-network-based self-modifying firewall for 
@@ -38,26 +62,34 @@ const About = () => {
                     <div className="ml-4 mt-6 flex justify-between orange-bullet" style={{ maxWidth: '600px' }}> {/* You can adjust the maxWidth as needed */}
                         <ul className="list-inside space-y-2 w-1/2 pr-1 text-gray-500">
                             <li className="font-light">React</li>
-                            <li className="font-light">Node</li>
                             <li className="font-light">PyTorch</li>
+                            <li className="font-light">MongoDB</li>
                         </ul>
                         <ul className="list-inside space-y-2 w-1/2 pl-1 text-gray-500">
-                            <li className="font-light">MongoDB</li>
                             <li className="font-light">scikit-learn</li>
+                            <li className="font-light">Node</li>
                             <li className="font-light">Typescript</li>
                         </ul>
                     </div>
 
 
-
                 </div>
+                {/* Image (displayed below text for small screens) */}
+                {isSmallViewport && 
+                    <div className="w-full md:w-2/5 flex flex-col items-center mt-8 md:mt-32 md:mr-16">
+                    <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
+                    <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
+                    </div>
+                }
             </div>
+            {/* Image (displayed next to text for large screens) */}
+            {!isSmallViewport &&
+                <div className="w-full md:w-2/5 flex flex-col items-center mt-32 mr-16">
+                    <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
+                    <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
+                </div>
+            }
 
-            <div className="w-2/5 flex flex-col items-center mt-32 mr-16">
-                <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
-                <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
-            </div>
-        
         </div>
     </div>
   );
