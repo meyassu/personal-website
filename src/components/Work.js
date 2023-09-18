@@ -2,6 +2,7 @@ import React from 'react';
 
 import ahabPic from "../../public/res/images/work/project_logos/ahab.png"
 import douglasPic from "../../public/res/images/work/project_logos/douglas.png"
+import owlPic from "../../public/res/images/work/project_logos/owl.jpeg"
 import githubGray from "../../public/res/images/landing/social_logos/github-logo-light-gray.png" 
 import githubOrange from "../../public/res/images/landing/social_logos/github-logo-orange.png"
 
@@ -23,7 +24,12 @@ const Work = () => {
               description="Fine-tuned GPT-2 and old-fashioned text-generating RNN trained on classic science-fiction stories for the purpose of providing the community with extremely low-resource models to experiment with in a fun context."
               githubLink="https://github.com/meyassu/douglas"
             />
-            <ProjectIcon />
+            <ProjectIcon 
+              imageUrl={owlPic}
+              projectName="Owl.eth"
+              description="A back-end to track / recommend priority gas fees on the Ethereum blockchain. Implemented with Node and Infura."
+              githubLink="https://github.com/meyassu/owl.eth"
+            />
           </div>
       </div>
       <p className="md:ml-8 text-base text-gray-300 overflow-ellipsis overflow-hidden">Note: many repositories on my Github are private due to ongoing NDAs</p>

@@ -78,7 +78,7 @@ const About = () => {
                 {isSmallViewport && 
                     <div className="w-full md:w-2/5 flex flex-col items-center mt-8 md:mt-32 md:mr-16">
                     <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
-                    <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
+                    <p className="mt-2 text-gray-400 text-xs text-center">Substructure is revealed through high-energy interaction.</p>
                     </div>
                 }
             </div>
@@ -86,7 +86,7 @@ const About = () => {
             {!isSmallViewport &&
                 <div className="w-full md:w-2/5 flex flex-col items-center mt-32 mr-16">
                     <img src={particleCollision} alt="Traces of high-energy particle collision" className="rounded shadow-lg"/>
-                    <p className="mt-2 text-gray-400 text-xs text-center">Physical substructure is revealed through high-energy interaction.</p>
+                    <p className="mt-2 text-gray-400 text-xs text-center">Substructure is revealed through high-energy interaction.</p>
                 </div>
             }
 

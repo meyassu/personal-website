@@ -20,9 +20,9 @@ const Contact = () => {
       </div>
 
       {/* New Image div */}
-      <div className="self-center -mb-22">
+      {/* <div className="self-center -mb-22">
         <img src={calvinHobbes} alt="Calvin/Hobbes" />
-      </div>
+      </div> */}
     
       <div className="self-center">
         <p className="text-gray-400 text-xs text-center -mb-4">Designed & developed by me :)</p>
