@@ -27,7 +27,7 @@ const Work = () => {
             <ProjectIcon 
               imageUrl={owlPic}
               projectName="Owl.eth"
-              description="A back-end to track / recommend priority gas fees on the Ethereum blockchain. Implemented with Node and Infura."
+              description="A back-end to track / recommend priority gas fees on the Ethereum blockchain. Implemented with Node and Infura. Work in progress."
               githubLink="https://github.com/meyassu/owl.eth"
             />
           </div>
