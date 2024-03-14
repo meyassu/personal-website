@@ -105,7 +105,7 @@ const Menu = () => {
                     <MenuItem number="01." label="About" href="#about" />
                     <MenuItem number="02." label="Work" href="#work" />
                     <MenuItem number="03." label="Contact" href="#contact" />
-                    <ResumeLink />
+                    { /* <ResumeLink /> */}
                 </div>
                 
                 {/* Hamburger Icon */}
