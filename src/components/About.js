@@ -39,7 +39,7 @@ const About = () => {
                     degree in computer science where I worked as a research assistant in the <Hyperlink text="Biomedical Imaging Laboratory" 
                     link="https://bmil.bioengineering.gmu.edu/"/> on applications of deep learning to histologic disease modeling and photoacoustic 
                     tomography (PAT) reconstruction under <Hyperlink text="Parag Chitnis, Ph.D" link="https://www.gmu.edu/profiles/pchitnis-0"/>. 
-                    In the past few years, I have also worked at various companies and organizations such as <Hyperlink text="IDEMIA" link="https://www.idemia.com/"/>, <Hyperlink text="Methuselah Foundation" link="https://www.mfoundation.org/"/>, and <Hyperlink text="AUS" link="https://www.aus.edu/"/> on 
+                    In the past few years, I have also worked at various companies and organizations such as <Hyperlink text="IDEMIA" link="https://www.idemia.com/"/>, and <Hyperlink text="Methuselah Foundation" link="https://www.mfoundation.org/"/> on 
                     projects ranging from device driver development for the TSA CAT-2 system to supply chain optimization and automatic ASL translation.
                     </p>
 
